@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.letter {
+    background-image: url('лист-бумаги.png'); /* Подставьте путь к изображению листа бумаги */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.from {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.content {
+    margin-bottom: 20px;
+}
+.links {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+.links a {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #007bff;
+}
+.links a:hover {
+    text-decoration: underline;
+}
