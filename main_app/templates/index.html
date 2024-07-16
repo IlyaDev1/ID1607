@@ -22,11 +22,16 @@
             </p>
         </div>
         <div class="links">
-            <p>Пока мы были вместе, произошло много классного, давай немного вспомним:</p>
-            {% for link in links %}
-                <a href="{{ link.link }}">{{ link.date_time }}</a>
-            {% endfor %}
-            <!--<a href="/?answer=true">Показать ответ</a>-->
+            {% if answer %}
+                {% for correct_link in correct_links %}
+                    <a href="{{ correct_link.link }}">{{ correct_link.date_time }}</a>
+                {% endfor %}
+            {% else %}
+                {% for num, wrong_link in wrong_links %}
+                    <a href="{{ wrong_link.link }}">{{ num }}</a>
+                {% endfor %}
+            {% endif %}
+            <a href="/?answer=true">Показать ответ</a>
         </div>
     </div>
 </body>
